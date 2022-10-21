@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap")
+@import 'vars'
+
+
+
+/*** Main Colors ***/
+\:root
+  --main-color: #ff5400
+  --grediant-color: linear-gradient(90deg, #ff4267 40%, #ff4b2e 100%)
+  --white: #fff
+  --bg-color: rgba(255, 255, 255, 0.8)
+  --color-gray: rgba(10, 39, 72, 0.7)
+  --color-black: #312620
+
+
+.dark-mode
+  --text-color: #c7c7c7
+  --headings-color: #fff
+  --white: #1c1c1c
+  --bg-color: #141414
+
+  
+
+/*** GENERIC ***/
+* 
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+html
+  scroll-behavior: smooth
+
+body
+  background-color: #f6f7f8 
+  font-family: 'Poppins', sans-serif
+
+input,
+button
+  outline: 0
+
+a
+  text-decoration: none
+  color: $black
+
+ul
+  list-style: none
+
+svg[data-prefix="fas"][class*="fa-heart"]
+  color: red
+
+#root
+  position: relative
+  min-height: 100vh !important
+
+
+/*** CLASSES ***/
+.text-white
+  color: $white
+
+.text-black
+  color: $black
+
+.text-gray
+  color: $gray
+
+.text-main-color
+  color: $main-color
+
+.text-center
+  text-align: center
+
+.bg-white
+  background-color: $bg-white
+
+.pointer
+  cursor: pointer
+
+.form-group
+  padding: 1rem
+  background-color: #fff
+  border-radius: 44px
+
+.p-sticky
+  position: sticky
+  top: 0
+  z-index: 10
+
+
+/*** Spinner ***/ 
+.spinner
+  color: $main-color
+  animation: spinner 1.2s infinite
+
+@keyframes spinner
+  0%
+    rotate: 0deg
+
+  100%
+    rotate: 360deg
+
+.login-alert
+  background-color: $main-color
+  color: $white
+

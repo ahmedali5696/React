@@ -1,0 +1,34 @@
+@import '../assets/styles/vars'
+  
+  
+.cart
+  max-width: 27rem
+  position: absolute
+  right: 0
+  top: 5.5rem
+  border-radius: 5px
+  background-color: $white
+  .total-price
+    font-weight: 600
+
+  &__empty
+    gap: calc(5rem + 1.5625vw)
+    img
+      width: 4rem
+
+  &__items
+    max-height: 20rem
+    overflow-y: auto
+    
+    header
+      border-bottom: 2px solid $gray
+    img
+      width: 5rem
+      border-radius: 50%
+    button
+      background-color: transparent
+      color: $main-color
+      border: 0
+    
+
+  

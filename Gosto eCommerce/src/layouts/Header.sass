@@ -1,0 +1,65 @@
+@import '../assets/styles/vars'
+
+  
+.header
+  box-shadow: rgba(0, 0, 0, 5%) 1.95px 1.95px 2.6px
+  background: rgba(255, 255, 255, 0.8)
+  padding-inline: calc(5px + 1.5625vw)
+  position: relative
+  &__logo
+    width: calc(80px + 1.5625vw)
+    margin-inline-end: calc(.5rem + 1.5625vw)
+
+
+.navbar__toggler
+  display: none
+
+.navbar__nav
+  gap: calc(.5rem + 1.5625vw)
+  a
+    text-decoration: none
+    text-transform: uppercase
+    font-weight: 600
+    font-size: clamp(.80rem, 1.7vw, 1rem)
+    color: $black
+    &:hover
+      color: $main-color
+
+@media (max-width: 576px) 
+  .navbar__toggler
+    display: block
+    border: 0
+    background-color: transparent
+    z-index: 9
+    
+  .navbar__nav
+    padding: 5rem 2rem
+    gap: 2rem
+    position: fixed
+    inset: 0 40% 0 0
+    z-index: 8
+    flex-direction: column
+    background-color: rgba(255, 255, 255, 0.8)
+    translate: -100% 0
+    transition: translate .15s ease-in-out
+    &[data-expanded="true"]
+      translate: 0
+ 
+
+.nav-item.active
+  a
+    color: $main-color
+
+.navbar__user
+  div 
+    svg:hover
+      color: $main-color
+
+@media ( min-width: 361px )
+  .navbar__user
+    .user-control > *
+      display: inline-block
+
+@media ( max-width: 576px )
+  .cart-btn
+    padding: 5px 9px !important

@@ -1,0 +1,45 @@
+.main
+  min-height: 80vh
+  max-width: 800px
+  position: relative
+  background-image: url(../assets/images/header-bg.png)
+  background-repeat: no-repeat
+  background-size: contain
+  
+  h1
+    font-weight: 600
+    font-size: clamp(26px, 3.5vw, 36px)
+
+  &__search
+    label
+      border-right: 1px solid #000
+      padding-right: 1rem
+      margin-right: 1rem
+      white-space: nowrap
+    input
+      width: 100%
+      border: 0
+      background-color: transparent
+
+  .search-results
+    width: 97%
+    height: 200px
+    position: absolute
+    background-color: #fff
+    overflow-y: auto
+
+
+
+  .search-item
+    // border-block-end: 1px solid #777
+    position: relative
+    img
+      width: 40px
+      border-radius: 50%
+    &::before
+      content: ''
+      position: absolute
+      bottom: 0
+      height: 1px
+      width: clamp(200px, 50vw, 450px)
+      background-color: #777
