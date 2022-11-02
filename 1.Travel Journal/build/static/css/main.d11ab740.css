@@ -1,0 +1,58 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #e5e5e5;
+    display: flex;
+    font-family: Inter, sans-serif;
+    margin: 0
+}
+
+.container {
+    background-color: #fff;
+    flex-basis: 900px;
+    margin: 60px auto
+}
+
+.navbar {
+    align-items: center;
+    background-color: #f55a5a;
+    color: #fff;
+    display: flex;
+    gap: 7px;
+    justify-content: center
+}
+
+.navbar img {
+    padding-top: 5px
+}
+
+.cards {
+    gap: 19px;
+    padding: 60px 40px
+}
+
+.cards,
+.cards__location {
+    align-items: center;
+    display: flex
+}
+
+.cards__location {
+    gap: 4px
+}
+
+.cards__location p {
+    margin-block: 0;
+    margin-right: 10px;
+    text-transform: uppercase
+}
+
+.cards__location a {
+    color: #918e9b
+}
+
+.cards__date {
+    font-weight: 700
+}
+
+/*# sourceMappingURL=main.d11ab740.css.map*/

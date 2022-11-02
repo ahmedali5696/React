@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #E5E5E5;
+  display: flex;
+}
+
+
+.container {
+  flex-basis: 900px;
+  background-color: white;
+  margin: 60px auto;
+}
+
+
+.navbar {
+  display: flex;
+  gap: 7px;
+  justify-content: center;
+  align-items: center;
+  background-color: #F55A5A;
+  color: #fff;
+}
+
+.navbar img {
+  padding-top: 5px;
+}
+
+
+.cards {
+  display: flex;
+  gap: 19px;
+  align-items: center;
+  padding: 60px 40px;
+  position: relative;
+}
+
+.card-day {
+  position: absolute;
+  top: 65px;
+  left: 50px;
+}
+
+.cards__location {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.cards__location p {
+  margin-block: 0;
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+
+.cards__location a {
+  color: #918E9B;
+}
+
+.cards__date {
+  font-weight: bold;
+}
