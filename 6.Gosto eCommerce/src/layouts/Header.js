@@ -52,7 +52,7 @@ function Header() {
             <ul className='navbar__nav mx-sm-3 d-flex' id="navba-nav" data-expanded={navExpanded}>
               {navItems.map((nav, index) => (
                 <li key={index} className={`nav-item ${nav === 'home' ? 'active' : ''}`}>
-                  <Link to={`/${nav}`} className="nav-link text-black">{nav}</Link>
+                  <Link to={`${nav}`} className="nav-link text-black">{nav}</Link>
                 </li>
               ))}
             </ul>
